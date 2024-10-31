@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- link css -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- link icon -->
+    <title>E-Learning</title>
+    <link rel="shortcut icon" href="./img/e-learn.jpg" type="image/x-icon">
+    
+    <!-- link other -->
+        <!-- aos book -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+
+
+</head>
+<body>
+    <div class="container-fluid p-0 ">
+
+        <!-- modal login -->
+        <div class="modal fade" id="examplemodal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    <h1 class="text-center">Sign in</h1>
+                  <!-- social app -->
+                  <div class="d-flex justify-content-center my-4">
+                    <div class="rounded-circle bg-success mx-2 py-2 d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;" >
+                        <a href="" class="fs-4 text-light">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="rounded-circle bg-success mx-2 d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;" >
+                        <a href="" class="fs-4 text-light">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                    <div class="rounded-circle bg-success mx-2 d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;" >
+                        <a href="" class="fs-4 text-light">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                  </div>
+
+                  <!-- form input -->
+                    <div class="px-5 mt-3">
+                        <form action="" class="text-center" >
+                            <span class="m-0"> OR use your account </span>
+                            <input type="email" name="" id="" class="form-control   shadow-none my-2 py-2 " placeholder="Email" required>
+                            <input type="password" name="" id=""class="form-control shadow-none my-2 py-2 " placeholder="password" required>
+                        
+                            <a href="" class="text-dark my-2 text-decoration-none"> Forgot your password </a>
+                            <br>
+                            <button class="btn bg-primary shadow-none fs-8 text-uppercase  rounded-3 my-3 px-3 text-light"> sign in </button>
+
+                        </form>
+                    </div>
+                
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- nav contain -->
+        <nav class="navbar fixed-top" id="nav">
+
+            <div class="container">
+
+                <!-- Mail -->
+                <button class="d-block d-lg-none border-0 btn shadow">
+                    <i class="bi bi-envelope-check fs-2 fw-bold text-light"></i>
+                </button>
+
+                <!-- left-navbar -->
+                <div class="d-flex align-items-center">
+                    <a href="" class="logo-font navbar-brand fs-3 text-light">
+                        ETEC-center
+                    </a>
+                    <div class="d-none d-lg-block">
+                        <ul class="nav">
+                            <li> <a href="" class="nav-link text-light">Home</a> </li>
+                            <li> <a href="" class="nav-link text-light">Learn</a> </li>
+                            <li> <a href="" class="nav-link text-light">HTML</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="d-block d-lg-none border-0 btn shadow-none" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" >
+                    <i class="bi bi-list text-light fs-2 fw-bold"></i>
+                </button>
+
+                <!-- right nav -->
+                <div class="d-none border-0 d-lg-flex align-items-center">
+                    <span class="text-light fw-bold border-end pe-1">+855 092 33 44 55</span>
+                    <button class="shadow-none mx-2 px-3 btn btn-light" data-bs-toggle="modal" data-bs-target="#examplemodal">Login</button>
+                    <button class="shadow-none mx-2 px-3 btn btn-success">Register</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" id="sideMenu">
+            <div class="offcanvas-header border-bottom">
+                <a href="" class="logo-font navbar-brand text-dark fs-4">
+                    ETEC-center
+                </a>
+                <button class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <!-- user -->
+                <div class="d-flex p-2">
+                    <div class="rounded-circle overflow-hidden border-darkblue bg-dark-blue" style="width: 70px; height: 70px;"> 
+                        <img class="w-100 h-100 object-fit-cover" src="https://imgcdn.stablediffusionweb.com/2024/5/15/58128a9f-7d9b-40e4-91c9-9e39456a9947.jpg" alt="">
+                    </div>
+                    <div class="txt-font ms-2">
+                        <h4 class="m-0">User name</h4>
+                        <p class="m-0">User</p>
+                    </div>
+                </div>
+
+                <!-- menu -->
+                <ul class="list-unstyled">
+                    <li class="py-2 px-2 border-bottom "><a href="" class=" text-dark nav-link">Home</a></li>
+                    <li class="py-2 px-2 border-bottom "><a href="" class=" text-dark nav-link">About</a></li>
+                    <li class="py-2 px-2 border-bottom " data-bs-toggle="collapse" data-bs-target="#collapse-data">
+                        <div class="d-flex justify-content-between">
+                            <a href="" class="text-dark nav-link">Course</a>
+                        </div>
+                        <!-- course -->
+                        <div class="collapse" id="collapse-data" style="cursor:pointer">
+                            <ul class="list-unstyled mt-2 border-top">
+                                <li class="py-2 ms-4">Front-end</li>
+                                <li class="py-2 ms-4">Back-end</li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <div class="d-lg-flex justify-content-between my-5">
+                        <span class="text-dark fw-bold me-5 ">+855 092 33 44 55</span>
+                        <button class="mx-2  px-2 btn btn-dark shadow-none" data-bs-toggle="modal" data-bs-target="#examplemodal">Login</button>
+                        <button class="mx-2  px-2 btn btn-success shadow-none">Register</button>
+                    </div>
+
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- main content -->
+        <main>
+            <!-- slide main -->
+            <div class="hero container-fluid p-0 bg-danger">
+                <div id="slide" class="carousel silde w-100 h-100">
+                    <div class="carousel-indicators">
+                        <button style="width: 15px; height: 15px;" type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active btn border-0  rounded-circle" ></button>
+                        <button style="width: 15px; height: 15px;" type="button" data-bs-target="#slide" data-bs-slide-to="1"  class="btn border-0 rounded-circle"></button>
+                        <button style="width: 15px; height: 15px;" type="button" data-bs-target="#slide" data-bs-slide-to="2"  class="btn border-0 rounded-circle"></button>
+                    </div>
+
+                    <div class="carousel-inner w-100 h-100 ">
+
+                        <div class="carousel-item active w-100 h-100 position-relative">
+
+                            <img style="filter: brightness(30%);" class="d-block w-100 h-100 object-fit-cover" src="https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg" >
+
+                            <div class="col-10 col-md-8 col-lg-6 text-center position-absolute z-2  top-50 start-50 translate-middle text-light">
+                                <h1 class="animate__animated animate__zoomIn">What is concept of code?</h1>
+                                <p> a code is usually considered as an algorithm that uniquely represents symbols from some source alphabet, by encoded strings, which may be in some other target alphabet.</p>
+                                <button class="bg-success text-light btn px-2 shadow-none">Learn More</button>
+                            </div>
+
+                            <!-- <img style="filter: brightness(30%);" class="d-block w-100 h-100 object-fit-cover" src="https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg" > -->
+                        </div>
+
+                        <div class="carousel-item w-100 h-100 position-relative">
+                            <div class="col-10 col-md-8 col-lg-6 text-center fixed-top position-absolute top-50 start-50 translate-middle text-light">
+                                <h1>What is code used for?</h1>
+                                <p>Since computers do not communicate like humans, coding acts as a translator. Code converts human input into numerical sequences that computers understand.</p>
+                                <button class="bg-success text-light btn px-2 shadow-none">Learn More</button>
+                            </div>
+
+                            <img style="filter: brightness(30%);" class="d-block w-100 h-100 object-fit-cover" src="https://ai-techpark.com/wp-content/uploads/2023/02/5-Reasons-to-Be-Passionate-about-Coding.jpg" >
+                        </div>
+
+                        <div class="carousel-item w-100 h-100 position-relative">
+                            <div class="col-10 col-md-8 col-lg-6 text-center fixed-top position-absolute top-50 start-50 translate-middle text-light">
+                                <h1>Is coding easy to learn?</h1>
+                                <p>it's also not hard to learn to code if you start learning where you're at. It's easier when you start with foundational skills, like-minded people, mentors, and a goal in mind.</p>
+                                <button class="bg-success text-light btn px-2 shadow-none">Learn More</button>
+                            </div>
+
+                            <img style="filter: brightness(30%);" class="d-block w-100 h-100 object-fit-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKc0BlCorsZuucFztA8Auu8uU_VHPC3620uA&s" >
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- our book -->
+            <div class="container-fluid my-4 p-0">
+                <div class="container p-0">
+                    <div class="row m-0">
+
+                        <div class="col-6 col-lg-3 p-3 p-md-3" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card h-100 txt-font px-2">
+                                <img src="./img/web-image.png" alt="abcoo" width="70px">
+                                <h6 class="my-2 mb-0">Website</h6>
+                                <p class="text-limit text-secondary">
+                                    Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 p-3 p-md-3 " data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card h-100 txt-font px-2">
+                                <img src="./img/web-image.png" alt="abcoo" width="70px">
+                                <h6 class="my-2 mb-0">Website</h6>
+                                <p class="text-limit text-secondary">
+                                    Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 p-3 p-md-3" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card h-100 txt-font px-2">
+                                <img src="./img/web-image.png" alt="abcoo" width="70px">
+                                <h6 class="my-2 mb-0">Website</h6>
+                                <p class="text-limit text-secondary">
+                                    Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 p-3 p-md-3 " data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card h-100 txt-font px-2">
+                                <img src="./img/web-image.png" alt="abcoo" width="70px">
+                                <h6 class="my-2 mb-0">Website</h6>
+                                <p class="text-limit text-secondary">
+                                    Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- title -->
+            <div class="container-fluid bg-dark-blue py-5 " data-aos="fade-up" data-aos-duration="500">
+                <div class="container ">
+                    <div class="txt-font text-light col-md-6 p-0 p-md-3">
+                        <h3>Discount Course</h3>
+                        <p>
+                            Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                        </p>
+                        <button class="btn bg-danger px-4 shadow text-light"> Learn More </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- course available -->
+            <div class="container-fluid p-0 py-3">
+                <div class="container txt-font">
+                    <h3>Course available</h3>
+                    <div class="row m-0">
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="300">
+                            <div class="card p-3">
+                                <div class="bg-success" style="height: 160px;">
+                                    <img class="w-100 h-100 object-fit-cover" src="" alt="">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="300">
+                            <div class="card p-3">
+                                <div class="bg-success" style="height: 160px;">
+                                    <img class="w-100 h-100 object-fit-cover" src="" alt="">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="300">
+                            <div class="card p-3">
+                                <div class="bg-success" style="height: 160px;">
+                                    <img class="w-100 h-100 object-fit-cover" src="" alt="">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="300">
+                            <div class="card p-3">
+                                <div class="bg-success" style="height: 160px;">
+                                    <img class="w-100 h-100 object-fit-cover" src="" alt="">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Promotion course -->
+            <div class="container-fluid bg-dark-blue py-5" data-aos="fade-up" data-aos-duration="500">
+                <div class="container d-flex justify-content-md-center">
+                    <div class="col-md-6 p-0 p-md-3  text-light txt-font">
+                        <h1>Promotion Course</h1>
+                        <p>
+                            Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                        </p>
+                        <button class="btn bg-danger text-light px-3 shadow">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course promotion -->
+            <div class="container-fluid py-5 p-0">
+                <div class="container text-font">
+                    <h1>Promotion Course</h1>
+                    <div class="row m-0">
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <div class="card p-2 border-success" >
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <div class="card p-2 border-success">
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <div class="card p-2 border-success">
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <div class="card p-2 border-success">
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <h3>Totorial C++</h3>
+                                    <div class="">
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill text-warning me-1"></i>
+                                        <i class="bi bi-star-fill "></i>
+                                    </div>
+                                    <h4 class="text-danger">$49</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- instructor course -->
+            <div class="container-fluid bg-dark-blue">
+                <div id="carouselExampleIndicators" class="carousel slide py-5">
+        
+                    <div class="container carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="col-12 text-center text-light">
+                            <p>
+                                Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                            </p>
+                            <div style="width: 60px; height: 60px;" class="rounded-circle bg-dark m-auto ">
+                                <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+
+                            <p class="fw-bold m-0">User Name</p>
+                            <p>Web Developer</p>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="col-12 text-center text-light">
+                            <p>
+                                Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                            </p>
+                            <div style="width: 60px; height: 60px;" class="rounded-circle bg-dark m-auto ">
+                                <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+
+                            <p class="fw-bold m-0">User Name</p>
+                            <p>Front-End</p>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="col-12 text-center text-light">
+                            <p>
+                                Create a professional website for free with the Website.com website builder. Domain names, web hosting, website templates, and ecommerce solutions included.
+                            </p>
+                            <div style="width: 60px; height: 60px;" class="rounded-circle bg-dark m-auto ">
+                                <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+
+                            <p class="fw-bold m-0">User Name</p>
+                            <p>Flutter</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button style="width: 15px; height: 15px;"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn border-0  rounded-circle shadow-none"></button>
+                        <button style="width: 15px; height: 15px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn border-0 rounded-circle shadow-none"></button>
+                        <button style="width: 15px; height: 15px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn border-0 rounded-circle shadow-none"></button>
+                    </div>                
+                  </div>
+            </div>
+
+            <!-- the lastest -->
+            <div class="container-fluid my-4 p-0">
+                <div class="container text-font">
+                    <h2>The lastest course</h2>
+                    <div class="row m-0">
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <!-- box -->
+                            <div class="card p-2 border-success" >
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <p class="text-limit">
+                                        Create a professional website for free with the Website.com website builder. 
+                                        Domain names, web hosting, website templates, and ecommerce solutions included.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <!-- box -->
+                            <div class="card p-2 border-success" >
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <p class="text-limit">
+                                        Create a professional website for free with the Website.com website builder. 
+                                        Domain names, web hosting, website templates, and ecommerce solutions included.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <!-- box -->
+                            <div class="card p-2 border-success" >
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <p class="text-limit">
+                                        Create a professional website for free with the Website.com website builder. 
+                                        Domain names, web hosting, website templates, and ecommerce solutions included.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-3 col-md-4 col-lg-3 p-2 p-md-3 p-lg-4" data-aos="fade-up" data-aos-duration="400"> 
+                            <!-- box -->
+                            <div class="card p-2 border-success" >
+                                <div class="bg-success" style="height: 150px;">
+                                    <img src="..." alt="" class="w-100 h-100 object-fit-cover">
+                                </div>
+                                <div class="card-body p-0 my-3">
+                                    <p class="text-limit">
+                                        Create a professional website for free with the Website.com website builder. 
+                                        Domain names, web hosting, website templates, and ecommerce solutions included.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid bg-dark-blue py-5 text-light text-center">
+                <h3>Find & Follow</h3>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="px-2 fs-4" >
+                        <i class="bi bi-facebook"></i>
+                    </li>
+                    <li class="px-2 fs-4" >
+                        <i class="bi bi-tiktok"></i>
+                    </li>
+                    <li class="px-2 fs-4" >
+                        <i class="bi bi-instagram"></i>
+                    </li>
+                    <li class="px-2 fs-4" >
+                        <i class="bi bi-youtube"></i>
+                    </li>
+                    
+                </ul>
+                <p class="m-0"> Email   : etec.info@gmail.com </p>
+                <p class="m-0"> Address : Stree 2022, Phnom Penh</p>
+                <p class="m-0">Copyright 2024 All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+<script src="./js/index.js"></script>
+<!-- show our books -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+    var type = new Typed('.auto-type',{
+        strings: ['welcome to','My channel'],
+        typeSpend: 130,
+        backSpend: 100,
+        loop:true,
+    });
+
+</script>
+
+</html>

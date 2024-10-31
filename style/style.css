@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+/*------ font ------ */
+.logo-font{
+    font-family: "Spicy Rice", serif !important;
+}
+
+/* ------ color ------- */
+.bg-dark-blue{
+    background-color: #001861;
+}
+/* font color */
+.color{
+    color: black;
+   
+}
+/* hero */
+.hero{
+    height: 100vh;
+}
+.text-limit{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	.hero{
+        height: 60vh;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.hero{
+        height: 60vh;
+    }
+}
